@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+
+    <form>
+        <label for="username">Username</label>
+        <br>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+        <label for="email">Email</label>
+        <br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="password">Password</label>
+        <br>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <label for="phone_number">Phone number</label>
+        <br>
+        <input type="number" id="phone_number" name="phone_number" required>
+        <br><br>
+        <label for="display_name">Display name</label>
+        <br>
+        <input type="text" id="display_name" name="display_name" required>
+        <br><br>
+        
+        <p>Select your age</p>
+        
+        <input type="radio" name="age" value="0-25" id="option-1" required> <!--the value attribute will be processed in the server side later when user submits the form-->
+        <label for="option-1">0-25</label> 
+        <br>
+        <input type="radio" name="age" value="26-50" id="option-2" required> <!--the name attribute is used to group the same topic of the labels together-->
+        <label for="option-2">26-50</label>
+        <br>
+        <input type="radio" name="age" value="51+" id="option-3" required>
+        <label for="option-3">51+</label>
+        <br><br>
+
+        <p>Am I under 18</p>
+        <input type="radio" name="kid/adult" id="kid" value="kid" required>
+        <label for="kid/adult">Yes</label>
+        <br>
+        <input type="radio" name="kid/adult" id="adult" value="adult" required>
+        <label for="kid/adult">No</label>
+        <br><br>
+
+        <p>Please select your favorite Web language</p>
+        <input type="radio" id="html" name="fav_language" value="HTML" required>
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS" required>
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript" required>
+        <label for="javascript">JavaScript</label>
+        <br><br>
+
+        <label for="question">Security questions:</label>
+        <select name="question" id="question" required>
+            <option value="q1">What's your favourite color?</option>
+            <option value="q2">What's your favourite food?</option>
+            <option value="q3">What do you do in your freetime?</option>
+        </select>
+        <br><br>
+        <label for="answer">Security questions' answers:</label>
+        <input type="text" id="answer" name="answer" required>
+        <br><br>
+
+        <label for="bio">Your Bio</label>
+        <br>
+        <textarea name="bio" id="bio" name="bio" cols="30" rows="10" placeholder="about you..." required></textarea>
+        <br><br>
+        <input type="submit" value="Submit Form">
+    </form>
+</body>
+</html>
+
